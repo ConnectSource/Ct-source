@@ -1,0 +1,76 @@
+name: Archive ConnectTeam Source Code
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Every hour
+  workflow_dispatch:
+    
+
+jobs:
+  build:
+    runs-on: "macos-latest"
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set dates
+      run: |
+        DXO=`date +%d-%k-20%g__%s` # dd-mm-yyyy__UnixTime (example: 20-11-2022__1666289374)
+        echo "DX=$DXO" >> $GITHUB_ENV
+        DXXO=`date +%v` # dd-Mon-yyy (example: 20-Oct-2022)
+        echo "DXO=$DXXO" >> $GITHUB_ENV
+        DXOATT=`date +%c`
+        echo "DXOAT=$DXOATT" >> $GITHUB_ENV
+
+
+
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2.2.4
+      with:
+        version: 7
+
+    - name: Update dependencies
+      run: |
+        pnpm install
+        pnpm update
+
+    - name: Download ConnectTeam code
+      run: |
+        pnpm start       
+
+    - name: Commit
+      run: |
+        git pull
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add .
+        git commit --allow-empty -s -m "CtSource on ${{ env.DXO }}"
+        
+    - name: Tag
+      run: |
+        git tag -m "Autorelease on ${{ env.DX }}" ${{ env.DX }}
+
+    - name: "Push files to GitHub"
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}        
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        draft: false
+        prerelease: false
+        title: ${{ env.DXOAT }}
+        automatic_release_tag: ${{ env.DX }}
+        files: |
+          ./files/latest/*

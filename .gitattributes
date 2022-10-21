@@ -1,0 +1,7 @@
+*	text=auto eol=lf
+
+*.ts	linguist-detectable
+.github/workflows/download.yml	linguist-detectable
+
+**/**/meta.yml linguist-generated
+*.js linguist-generated
