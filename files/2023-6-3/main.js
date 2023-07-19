@@ -3,6 +3,6 @@
 <body>
 <center><h1>404 Not Found</h1></center>
 <hr><center>nginx</center>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7e5d05e579f2283d","version":"2023.4.0","b":1,"token":"05b426105e62432c8d8425fc8a36b9c2","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7e923d965aff2816","version":"2023.4.0","b":1,"token":"05b426105e62432c8d8425fc8a36b9c2","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
