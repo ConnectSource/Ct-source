@@ -6,9 +6,9 @@
     center > < h1 > 404 Not Found < /h1></center >
     <
     hr > < center > nginx < /center> <
-    script defer src = "https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039"
-integrity = "sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g=="
-data - cf - beacon = '{"rayId":"7ec81dac7d8cc5bc","version":"2023.4.0","b":1,"token":"05b426105e62432c8d8425fc8a36b9c2","si":100}'
+    script defer src = "https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+integrity = "sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+data - cf - beacon = '{"rayId":"7ecbe95d1b5deb6b","version":"2023.4.0","b":1,"token":"05b426105e62432c8d8425fc8a36b9c2","si":100}'
 crossorigin = "anonymous" > < /script> <
     /body> <
     /html>
