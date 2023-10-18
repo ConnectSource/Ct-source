@@ -11,8 +11,8 @@
   "author": "gemsvido",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/js-beautify": "^1.14.1",
-    "@types/node": "^18.18.5",
+    "@types/js-beautify": "^1.14.2",
+    "@types/node": "^18.18.6",
     "typescript": "^4.9.5"
   },
   "dependencies": {
