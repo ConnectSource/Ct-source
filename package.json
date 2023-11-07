@@ -11,12 +11,12 @@
   "author": "gemsvido",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/js-beautify": "^1.14.2",
+    "@types/js-beautify": "^1.14.3",
     "@types/node": "^18.18.8",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "js-beautify": "^1.14.9",
+    "js-beautify": "^1.14.11",
     "node-fetch": "^3.3.2"
   }
 }
