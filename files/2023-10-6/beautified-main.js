@@ -9,7 +9,7 @@
     hr > < center > nginx < /center> <
     script defer src = "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
 integrity = "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-data - cf - beacon = '{"rayId":"8282e8f9e99e6b06","b":1,"version":"2023.10.0","token":"05b426105e62432c8d8425fc8a36b9c2"}'
+data - cf - beacon = '{"rayId":"82833c4ac87e201b","b":1,"version":"2023.10.0","token":"05b426105e62432c8d8425fc8a36b9c2"}'
 crossorigin = "anonymous" > < /script> <
     /body> <
     /html>
